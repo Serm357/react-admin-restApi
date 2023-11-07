@@ -251,6 +251,10 @@ let products = [
     inStock: true,
   },
 ];
+// HOME
+app.get(" /", (req, res) => {
+  res.json("welcome to react admin dummy api, endpoints eg:-(/api/users/:id)");
+});
 
 // GET USERS
 app.get("/api/users", (req, res) => {
