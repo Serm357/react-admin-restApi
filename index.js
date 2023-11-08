@@ -36,7 +36,7 @@ let users = [
     phone: "563 632 325",
     createdAt: "02.07.2023",
     verified: true,
-  },
+  }, 
   {
     id: 4,
     img: "https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -255,6 +255,14 @@ let products = [
 // GET USERS
 app.get("/api/users", (req, res) => {
   res.json(users);
+});
+//home
+app.get("/", (req, res) => {
+  res.json(`
+  welocome to this dummy api for users and products
+  example of endpoints
+  /api/users/:id
+  `);
 });
 
 // GET USER
